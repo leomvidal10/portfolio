@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonardo Martins | Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+</head>
+
+<body>
+    <div class="hero-header">
+        <div class="hero-container">
+            <p>Olá, eu sou o Leonardo! 👋</p>
+            <h1>Software<br>Engineer</h1>
+            <div class="socials-media">
+                <a href="https://www.behance.net/leonardomartins89" target="_blank"><i
+                        class="fa-brands fa-behance"></i></a>
+                <a href="https://www.youtube.com/@wizardcode" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/wizardcodeapp" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/leomvidal10" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/leonardo-martins-8ab302196/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <h2>Desde os meus 16 anos, tenho me dedicado à programação e adoro aprender cada vez mais sobre <span
+                    class="text-color-yellow">tecnologia</span> e <span class="text-color-yellow">UI/UX Design.</span>
+            </h2>
+        </div>
+        <i class="fa-solid fa-chevron-down"></i>
+    </div>
+    <div class="projects-container">
+        <div class="project-info" id="wizardcode">
+            <img src="assets/WizardCode.png" alt="">
+            <div class="btn-angular">Angular</div>
+        </div>
+        <a href="https://github.com/leomvidal10/RecipeApp" target="_blank">
+            <div class="project-info">
+                <img src="assets/RecipeApp.png" alt="">
+                <div class="btn-flutter">Flutter</div>
+            </div>
+        </a>
+
+        <a href="https://github.com/leomvidal10/WhatWeather" target="_blank">
+            <div class="project-info">
+                <img src="assets/Weather.png" alt="">
+                <div class="btn-angular">Angular</div>
+            </div>
+        </a>
+
+        <a href="https://github.com/leomvidal10/Countdown" target="_blank">
+            <div class="project-info">
+                <img src="assets/Countdown.png" alt="">
+                <div class="btn-angular">Angular</div>
+            </div>
+        </a>
+
+        <a href="https://github.com/leomvidal10/MoveIt" target="_blank">
+            <div class="project-info">
+                <img src="assets/moveIt.png" alt="">
+                <div class="btn-react">ReactJs</div>
+            </div>
+        </a>
+
+        <a href="https://github.com/leomvidal10/painel-administrativo" target="_blank">
+            <div class="project-info">
+                <img src="assets/adminpanel.png" alt="">
+                <div style="display: flex;">
+                    <div class="btn-php">Php</div>
+                    <div class="btn-codeigniter">CodeIgniter</div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <footer>
+        Portfólio desenvolvido por Leonardo.
+    </footer>
+</body>
+
+</html>
+
+<script>
+    let imgWizardCode = "assets/projectwizardcode.png"
+    let imgWizardCode2 = "assets/projectwizardcode2.png"
+
+    const openModalBtn = document.getElementById('wizardcode');
+    openModalBtn.addEventListener('click', function () {
+        Swal.fire({
+            title: 'WizardCode',
+            html: `
+            <p>WizardCode foi um trabalho de conclusão nota A do curso de Sistemas para Internet no SenacRs, com o objetivo de ensinar programação por meio de exercícios e gamificação.<br><br> Desenvolvido com Angular e sua API usando Express e Sequelize, o projeto foi implantado no Google Cloud. Como é planejado continuar aprimorando-o, o repositório não está disponível publicamente no momento.<br><br></p>
+            <img src=${imgWizardCode} style="width: 100%; border-radius: 10px;">
+            <img src=${imgWizardCode2} style="width: 100%; border-radius: 10px;">`,
+            confirmButtonText: 'Fechar'
+        });
+    });
+</script>
